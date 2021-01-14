@@ -36,7 +36,7 @@
         @endif
        
 	<div class="card">
-	<div class="card-header"><h3>Confrim delete</h3></div>
+	<div class="card-header"><h3>Xác Nhận Xóa</h3></div>
 	<div class="card-body">
         <img src="{{asset('images')}}/{{$user->image}}" width="120">
         <h2>{{$user->name}}</h2>
@@ -44,9 +44,9 @@
             @method('DELETE')
 			
             <div class="card-footer">
-                <button type="submit" class="btn btn-danger mr-2">Confrim</button>
+                <button type="submit" class="btn btn-danger mr-2">Đồng Ý</button>
                 <a href="{{route('doctor.index')}}" class="btn btn-secondary">
-                    Cancel
+                    Hủy
                   
                 </a>
             </div>

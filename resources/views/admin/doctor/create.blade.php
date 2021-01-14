@@ -160,7 +160,7 @@
                     <div class="col-md-6">
                         <label>Vai Trò</label>
                         <select name="role_id" class="form-control @error('role_id') is-invalid @enderror">
-                            <option value="">Please select role</option>
+                            <option value="">Vai trò</option>
                             @foreach(App\Role::where('name','!=','patient')->get() as $role)
                                 <option value="{{$role->id}}">{{$role->name}}</option>
                             @endforeach
@@ -178,7 +178,7 @@
             
            
             <div class="form-group">
-                <label for="exampleTextarea1">About</label>
+                <label for="exampleTextarea1">Mô tả</label>
                 <textarea class="form-control @error('description') is-invalid @enderror" id="exampleTextarea1" rows="4" name="description">
                 {{old('description')}}
 
@@ -189,8 +189,8 @@
                         </span>
                     @enderror
             </div>
-              <button type="submit" class="btn btn-primary mr-2">Submit</button>
-            <button class="btn btn-light">Cancel</button>
+              <button type="submit" class="btn btn-primary mr-2">Gửi</button>
+            <button class="btn btn-light">Hủy</button>
 
 
 				</form>

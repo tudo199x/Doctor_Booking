@@ -43,7 +43,7 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<label for="">Họ Tên Đầy Đủ</label>
-					<input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="doctor name" value="                   {{$user->name}}">
+					<input type="text" name="name" class="form-control @error('name') is-invalid @enderror"  value="                   {{$user->name}}">
                     @error('name')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -52,7 +52,7 @@
 				</div>
 				<div class="col-lg-6">
 					<label for="">Email</label>
-					<input type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="email"value="                   {{$user->email}}">
+					<input type="email" name="email" class="form-control @error('email') is-invalid @enderror" value="                   {{$user->email}}">
                      @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -64,7 +64,7 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<label for="">Mật Khẩu</label>
-					<input type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="doctor password">
+					<input type="password" name="password" class="form-control @error('password') is-invalid @enderror" >
                      @error('password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -89,7 +89,7 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<label for="">Trình Độ Học Vấn</label>
-						<input type="text" name="education" class="form-control @error('education') is-invalid @enderror" placeholder="doctor highest degree" value="                   {{$user->education}}">
+						<input type="text" name="education" class="form-control @error('education') is-invalid @enderror"  value="                   {{$user->education}}">
                          @error('education')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -98,7 +98,7 @@
 					</div>
 					<div class="col-lg-6">
 						<label for="">Địa Chỉ</label>
-						<input type="text" name="address" class="form-control @error('address') is-invalid @enderror" placeholder="doctor address"  value="{{$user->address}}">
+						<input type="text" name="address" class="form-control @error('address') is-invalid @enderror"  value="{{$user->address}}">
                          @error('address')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -156,7 +156,7 @@
             	<div class="col-md-6">
                         <div class="form-group">
                     <label>Hình Ảnh</label>
-                        <input type="file" class="form-control file-upload-info @error('image') is-invalid @enderror"  placeholder="Upload Image" name="image">
+                        <input type="file" class="form-control file-upload-info @error('image') is-invalid @enderror"  name="image">
                         <span class="input-group-append">
                        
                         </span>
