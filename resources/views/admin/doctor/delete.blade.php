@@ -8,8 +8,8 @@
             <div class="page-header-title">
                 <i class="ik ik-edit bg-blue"></i>
                 <div class="d-inline">
-                    <h5>Doctors</h5>
-                    <span>Delete doctor</span>
+                    <h5>Bác Sỹ</h5>
+                    <span>Xóa Bác Sỹ</span>
                 </div>
             </div>
         </div>
@@ -19,8 +19,8 @@
                 <li class="breadcrumb-item">
                     <a href="../index.html"><i class="ik ik-home"></i></a>
                 </li>
-                <li class="breadcrumb-item"><a href="#">Doctor</a></li>
-                <li class="breadcrumb-item active" aria-current="page">delete</li>
+                <li class="breadcrumb-item"><a href="#">Bác Sỹ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Xóa</li>
             </ol>
         </nav>
     </div>
