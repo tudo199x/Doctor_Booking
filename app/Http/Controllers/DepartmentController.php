@@ -80,7 +80,7 @@ class DepartmentController extends Controller
         $department = Department::find($id);
         $department->department = $request->department;
         $department->save();
-        return redirect()->route('department.index')->with('message','Department updated');
+        return redirect()->route('department.index')->with('message','Cập nhật thông tin thành công');
     }
 
     /**
@@ -93,6 +93,6 @@ class DepartmentController extends Controller
     {
         $department = Department::find($id);
         $department->delete();
-        return redirect()->route('department.index')->with('message','Department deleted');
+        return redirect()->route('department.index')->with('message','Xóa thành công');
     }
 }

@@ -108,7 +108,7 @@ class AppointmentController extends Controller
         $date = $request->date;
         $appointment= Appointment::where('date',$date)->where('user_id',auth()->user()->id)->first();
         if(!$appointment){
-            return redirect()->to('/appointment')->with('errmessage','Appointment time not available for this date');
+            return redirect()->to('/appointment')->with('errmessage','Không có thời gian cuộc hẹn cho ngày này');
         }
         $appointmentId = $appointment->id;
         $times = Time::where('appointment_id',$appointmentId)->get();
@@ -127,7 +127,7 @@ class AppointmentController extends Controller
                 'status'=>0
             ]);
         }
-        return redirect()->route('appointment.index')->with('message','Appointment time updated!!');
+        return redirect()->route('appointment.index')->with('message','Cập nhật thông tin thành công');
     }
 
 

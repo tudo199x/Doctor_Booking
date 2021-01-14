@@ -78,7 +78,7 @@ class FrontendController extends Controller
 
         }
 
-        return redirect()->back()->with('message','Your appointment was booked');
+        return redirect()->back()->with('message','Cuộc hẹn của bạn đã được đặt');
 
 
     }

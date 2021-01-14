@@ -21,7 +21,7 @@ class PrescriptionController extends Controller
     	$data  = $request->all();
     	$data['medicine'] = implode(',',$request->medicine);
     	Prescription::create($data);
-    	return redirect()->back()->with('message','Prescription created');
+    	return redirect()->back()->with('message','Đã thêm đơn thuốc');
     }
 
     public function show($userId,$date)
