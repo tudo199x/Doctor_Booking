@@ -1,100 +1,31 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+@section('content')
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="/banner/online-medicine-concept_160901-152.jpg" class="img-fluid" style="border:1px solid #ccc;">
+        </div>
+        <div class="col-md-6">
+            <h2>Tạo tài khoản và đặt cuộc hẹn ngay </h2> <br>
+              <h2>Hệ thống Y tế Vinmec</h2>
+            <p> Vinmec là Hệ thống Y tế phi lợi nhuận do Vingroup 
+             Tập đoàn kinh tế tư nhân hàng đầu Việt Nam đầu tư phát triển với sứ mệnh
+             “Chăm sóc bằng tài năng, y đức và sự thấu cảm". </p>
+             <h2>Tầm nhìn</h2>
+            <p>Vinmec cam kết phát triển hệ thống y tế hàn lâm vươn tầm quốc tế thông qua những nghiên cứu đột phá, 
+                nhằm mang lại chất lượng điều trị xuất sắc và dịch vụ chăm sóc hoàn hảo. </p>
+             <h2>Sứ mệnh</h2>
+            <p> Chăm sóc bằng tài năng, y đức và sự thấu cảm. </p>
+            <div class="mt-5">
+               <a href="{{url('/register')}}"> <button class="btn btn-success">Đăng Kí Là Bệnh Nhân</button></a>
+                <a href="{{url('/login')}}"><button class="btn btn-secondary">Đăng Nhập</button></a>
             </div>
         </div>
-    </body>
-</html>
+    </div>
+    <hr>
+
+  <!--date picker component-->
+  <find-doctor></find-doctor>
+</div>
+@endsection
