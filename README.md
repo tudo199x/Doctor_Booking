@@ -1,7 +1,7 @@
 Phân chia công việc :
--Models (Huỳnh Thị Ngọc)->(Nhóm Trưởng)
+-Models và chức năng trang bác sĩ (Huỳnh Thị Ngọc)->(Nhóm Trưởng)
 -Views (Lê Hoàng Phi)
--Controllers (Đỗ Văn Tú)
+-Controllers trang admin và bênh nhân (Đỗ Văn Tú)
 
 Mô tả bài toán:
 Đây là ứng dụng web đặt lịch hẹn với bác sĩ. Ứng dụng booking này dành cho 3 đối tượng là bệnh nhân, bác sĩ và admin. Mỗi đối tượng có một trang riêng.
