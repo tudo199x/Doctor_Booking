@@ -2,7 +2,7 @@
 
 Sau khi clone source code từ github về máy. 
  + Tiến hành mở project bằng visual studio code.
-![alt text](https://drive.google.com/file/d/1ytdImkFS2iwRkQNiZzHecE_IriG0bYDY/view)
+![alt](https://user-images.githubusercontent.com/54034135/105854848-fa9d6500-6019-11eb-98a6-7157aec821eb.png)
  + Sau đó mở trình terminal và chạy lệnh cập nhật Laravel : composer update ramsey/uuid v2.4
  + Tiếp theo import cơ sở dữ liệu mysql bằng file clinic.sql trong thư mục dự án.
  + Sau khi cập nhật thành công tiến hành khởi chạy server bằng lệnh : php artisan serve
