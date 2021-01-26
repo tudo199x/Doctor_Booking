@@ -8,6 +8,7 @@ Sau khi clone source code từ github về máy.
  + Sau khi cập nhật thành công tiến hành khởi chạy server bằng lệnh : php artisan serve
 
 Tài khoản Admin : admin@gmail.com
+
 Password : ngoc123456
 
 ----- Hướng dẫn cài đặt chi tiết -----
