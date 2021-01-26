@@ -54,7 +54,7 @@
  
     <div class="card">
         <div class="card-header">
-            Choose date
+            Chọn Ngày
             <br>
             
             @if(isset($date))
@@ -66,7 +66,7 @@
         <div class="card-body">
          <input type="text" class="form-control datetimepicker-input" id="datepicker" data-toggle="datetimepicker" data-target="#datepicker" name="date" >
          <br>
-         <button type="submit" class="btn btn-primary">check</button>
+         <button type="submit" class="btn btn-primary">Chọn</button>
         </div>
     </div>
   </form>

@@ -9,9 +9,9 @@
                     <h4 class="text-center">Thông Tin Bác Sĩ</h4>
                     <img  src="{{asset('images')}}/{{$user->image}}" width="100px" style="border-radius: 50%;" >
                     <br>
-                   <p class="lead"> Name:{{ucfirst($user->name)}}</p>
-                   <p class="lead"> Degree:{{$user->education}}</p>
-                   <p class="lead"> Specialist:{{$user->department}}</p>
+                   <p class="lead"> Tên:{{ucfirst($user->name)}}</p>
+                   <p class="lead"> Học vấn:{{$user->education}}</p>
+                   <p class="lead"> Chuyên ngành:{{$user->department}}</p>
                 </div>
                 
             </div>

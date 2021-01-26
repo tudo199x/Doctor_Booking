@@ -17,7 +17,7 @@
                     <p>Địa Chỉ: {{auth()->user()->address}}</p>
                     <p>Số Điện Thoại: {{auth()->user()->phone_number}}</p>
                     <p>Giới Tính: {{auth()->user()->gender}}</p>
-                    <p>Giới Thiệu: {{auth()->user()->description}}</p>
+                    <p>Tiền Sử Bệnh Án: {{auth()->user()->description}}</p>
 
                 </div>
             </div>
@@ -62,7 +62,7 @@
                                 @enderror
                        
                             <div class="form-group">
-                            <label>Bio</label>
+                            <label>Tiền Sử Bệnh Án</label>
                             <textarea name="description" class="form-control">{{auth()->user()->description}}</textarea>
                             
                         </div>
@@ -81,7 +81,7 @@
         </div>
         <div class="col-md-3">
             <div class="card">
-                <div class="card-header">Update Image</div>
+                <div class="card-header">Cập Nhật Ảnh Đại Diện</div>
                 <form action="{{route('profile.pic')}}" method="post" enctype="multipart/form-data">@csrf
                 <div class="card-body">
                     @if(!auth()->user()->image)
@@ -97,7 +97,7 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                    <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="submit" class="btn btn-primary">Cập Nhật</button>
                     
                 </div>
             </form>

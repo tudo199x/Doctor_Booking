@@ -51,7 +51,7 @@
 				</div>
 				<div class="col-lg-6">
 					<label for="">Email</label>
-					<input type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="email"value="                   {{old('email')}}">
+					<input type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder=""value="                   {{old('email')}}">
                      @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -63,7 +63,7 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<label for="">Mật Khẩu</label>
-					<input type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="doctor password">
+					<input type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="">
                      @error('password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -97,7 +97,7 @@
 					</div>
 					<div class="col-lg-6">
 						<label for="">Địa Chỉ</label>
-						<input type="text" name="address" class="form-control @error('address') is-invalid @enderror" placeholder="doctor address"  value="{{old('address')}}">
+						<input type="text" name="address" class="form-control @error('address') is-invalid @enderror" placeholder=""  value="{{old('address')}}">
                          @error('address')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>

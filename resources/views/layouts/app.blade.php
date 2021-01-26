@@ -23,6 +23,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -50,34 +51,45 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        
                     </ul>
 
                     <!-- Right Side Of Navbar -->
+
                     <ul class="navbar-nav ml-auto">
+
+                            <li class="nav-item">
+                            
+                                <a class="nav-link" href="" style="color: #fff; font-size:16px; font-weight: light ;"><i class="fas fa-phone-volume"></i> Hỗ trợ chuyên môn:1900 2202 </a>
+                            </li>
+                            <li class="nav-item">
+                            
+                                <a class="nav-link" href="" style="color: #fff; font-size:16px; font-weight: light;"><i class="fa fa-ambulance"></i> Hỗ trợ cấp cứu:1800 2404 </a>
+                            </li>
+
                         @if(auth()->check()&& auth()->user()->role->name === 'patient')
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('my.booking') }}" style="color: #fff; font-size:16px; font-weight: bold;">{{ __('Cuộc Hẹn Của Tôi') }}</a>
+                                <a class="nav-link" href="{{ route('my.booking') }}" style="color: #fff; font-size:16px; font-weight: light;">{{ __('Cuộc Hẹn Của Tôi') }}</a>
                             </li>
                         @endif
                         @if(auth()->check()&& auth()->user()->role->name === 'patient')
                             <li class="nav-item">
-                                <a style="color: #fff; font-size:16px; font-weight: bold;" class="nav-link" href="{{ route('my.prescription') }}" style="color: #fff; font-size:16px; font-weight: bold;">{{ __('Đơn Thuốc Của Tôi') }}</a>
+                                <a style="color: #fff; font-size:16px; font-weight: light;" class="nav-link" href="{{ route('my.prescription') }}" style="color: #fff; font-size:16px; font-weight: light;">{{ __('Đơn Thuốc Của Tôi') }}</a>
                             </li>
                         @endif
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a style="color: #fff; font-size:16px; font-weight: bold;"  class="nav-link" href="{{ route('login') }}">{{ __('Đăng Nhập') }}</a>
+                                <a style="color: #fff; font-size:16px; font-weight: light;"  class="nav-link" href="{{ route('login') }}">{{ __('Đăng Nhập') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a style="color: #fff; font-size:16px; font-weight: bold;" class="nav-link" href="{{ route('register') }}" style="color: #fff; font-size:16px; font-weight: bold;">{{ __('Đăng Kí Là Bệnh Nhân') }}</a>
+                                    <a style="color: #fff; font-size:16px; font-weight: light;" class="nav-link" href="{{ route('register') }}" style="color: #fff; font-size:16px; font-weight: light;">{{ __('Đăng Kí ') }}</a>
                                 </li>
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a style="color: #fff; font-size:16px; font-weight: bold;" id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a style="color: #fff; font-size:16px; font-weight: light;" id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -90,7 +102,7 @@
                                     <a style="color: #000; font-size:16px; font-weight: bold;" class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Đăng Xuất') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

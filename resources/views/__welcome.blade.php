@@ -16,14 +16,15 @@
             <p>Vinmec cam kết phát triển hệ thống y tế hàn lâm vươn tầm quốc tế thông qua những nghiên cứu đột phá, 
                 nhằm mang lại chất lượng điều trị xuất sắc và dịch vụ chăm sóc hoàn hảo. </p>
              <h2>Sứ mệnh</h2>
-            <p> Chăm sóc bằng tài năng, y đức và sự . </p>
+            <p> Chăm sóc bằng tài năng, y đức và sự  </p>
             <div class="mt-5">
-               <a href="{{url('/register')}}"> <button class="btn btn-success">Đăng Kí Là Bệnh Nhân</button></a>
+               <a href="{{url('/register')}}"> <button class="btn btn-success">Đăng Kí </button></a>
                 <a href="{{url('/login')}}"><button class="btn btn-secondary">Đăng Nhập</button></a>
             </div>
         </div>
     </div>
     <hr>
+    
 <!--Search doctor-->
 <form action="{{url('/')}}" method="GET">
     <div class="card">
