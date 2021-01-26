@@ -1,4 +1,5 @@
 ----- Hướng dẫn cài đặt chi tiết -----
+
 Sau khi clone source code từ github về máy. 
  + Tiến hành mở project bằng visual studio code.
 ![alt text](https://drive.google.com/file/d/1ytdImkFS2iwRkQNiZzHecE_IriG0bYDY/view)
