@@ -9,12 +9,17 @@ Sau khi clone source code từ github về máy.
 
 Tài khoản Admin : admin@gmail.com
 Password : ngoc123456
+
 ----- Hướng dẫn cài đặt chi tiết -----
 
 ----- Phân chia công việc -----
+
 -Models và chức năng trang bác sĩ (Huỳnh Thị Ngọc)->(Nhóm Trưởng)
+
 -Views (Lê Hoàng Phi)
+
 -Controllers trang admin và bênh nhân (Đỗ Văn Tú)
+
 ----- Phân chia công việc -----
 
 Mô tả bài toán:
