@@ -1,7 +1,20 @@
-Phân chia công việc :
+----- Hướng dẫn cài đặt chi tiết -----
+Sau khi clone source code từ github về máy. 
+ + Tiến hành mở project bằng visual studio code.
+![alt text](https://drive.google.com/file/d/1ytdImkFS2iwRkQNiZzHecE_IriG0bYDY/view)
+ + Sau đó mở trình terminal và chạy lệnh cập nhật Laravel : composer update ramsey/uuid v2.4
+ + Tiếp theo import cơ sở dữ liệu bằng file clinic.sql trong thư mục dự án.
+ + Sau khi cập nhật thành công tiến hành khởi chạy server bằng lệnh : php artisan serve
+
+Tài khoản Admin : admin@gmail.com
+Password : ngoc123456
+----- Hướng dẫn cài đặt chi tiết -----
+
+----- Phân chia công việc -----
 -Models và chức năng trang bác sĩ (Huỳnh Thị Ngọc)->(Nhóm Trưởng)
 -Views (Lê Hoàng Phi)
 -Controllers trang admin và bênh nhân (Đỗ Văn Tú)
+----- Phân chia công việc -----
 
 Mô tả bài toán:
 Đây là ứng dụng web đặt lịch hẹn với bác sĩ. Ứng dụng booking này dành cho 3 đối tượng là bệnh nhân, bác sĩ và admin. Mỗi đối tượng có một trang riêng.
